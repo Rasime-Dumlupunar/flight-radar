@@ -18,4 +18,4 @@
 
 # Demo 
 
-![](https://github.com/Rasime-Dumlupunar/netflix_clone/blob/main/netflix_clone%20.gif)
+![](https://github.com/Rasime-Dumlupunar/flight-radar/blob/main/flight-radarrgif.gif)
