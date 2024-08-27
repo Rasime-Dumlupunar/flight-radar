@@ -15,3 +15,7 @@
 - React-Leaflet: Leaflet ile React'in buluşmasını sağlar, harita entegrasyonunu basit hale getirir.
 - React-Paginate: Sayfalama işlevselliği ile verilerinizi düzenler ve erişimi kolaylaştırır.
 - React-Redux: Redux'un gücünü React ile birleştirir, uygulama yönetimini optimize eder
+
+# Demo 
+
+![](https://github.com/Rasime-Dumlupunar/netflix_clone/blob/main/netflix_clone%20.gif)
