@@ -1,0 +1,372 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 2.0em;
+
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #746262;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  border-color: #3441fe;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+
+  a:hover {
+    color: #747bff;
+  }
+
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+/* ------ BİZİM CSS'ler -----*/
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 40px;
+}
+
+header div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+
+}
+
+header img {
+  height: 50px;
+}
+
+@media (max-width: 600px) {
+  header h2 {
+    font-size: 18px;
+
+  }
+
+  header h3 {
+    font-size: 16px;
+  }
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+
+}
+
+.buttons button:first-child {
+  border-radius: 6px 0 0 6px;
+
+}
+
+.buttons button:last-child {
+  border-radius: 0 6px 6px 0;
+
+}
+
+.active {
+  background-color: #5aa4e4;
+}
+
+.leaflet-container {
+  margin-top: 30px;
+  height: calc(100vh - 173px);
+  /* herhangi bir değerden sabit değerden toplama çıkarma yapıp hesaplamayı sağlar, calc metodu ile sağlıyoruz.*/
+}
+
+.popup {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.popup span {
+  text-align: center;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.modal-outer {
+  position: fixed;
+  z-index: 99999;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+
+
+}
+
+.modal-inner {
+  background: rgb(31, 28, 28);
+  width: 300px;
+  height: 90%;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  gap: 5px;
+  box-shadow: 2px 2px 20px #535bf2;
+  margin-left: 10px;
+  overflow-y: auto;
+
+}
+
+.close-wrapper {
+  background-color: #3441fe;
+  display: flex;
+  justify-content: end;
+  border-radius: 8px;
+
+}
+
+.close-wrapper button {
+  background: none;
+  font-size: 17px;
+  transform: all 0.3s;
+}
+
+.close-wrapper button:hover {
+  filter: drop-shadow(2px 2px 10px white);
+}
+
+@media (max-width: 650px) {
+  .modal-outer {
+    width: 100%;
+  }
+
+  .modal-inner {
+    width: 70%;
+    height: 100%;
+    margin-left: 0px;
+    border-radius: 0px;
+    padding: 15px;
+  }
+}
+
+.modal-inner p {
+  display: flex;
+  gap: 10px;
+}
+
+.modal-inner h2 {
+  margin: 5px;
+}
+
+.modal-inner h1 {
+  margin: 5px;
+}
+
+.modal-inner p span:last-child {
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.modal-inner p:last-child {
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+
+.green {
+  background-color: rgb(0, 160, 0);
+}
+
+.red {
+  background-color: rgb(250, 6, 6);
+}
+
+.yellow {
+  background-color: rgb(207, 160, 5);
+}
+
+/* Loader */
+
+/* From Uiverse.io by Vazafirst */
+
+.loader-wrapper {
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+
+#page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+#h3 {
+  color: rgb(82, 79, 79);
+}
+
+#ring {
+  width: 190px;
+  height: 190px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  position: absolute;
+}
+
+#ring:nth-child(1) {
+  border-bottom: 8px solid rgb(240, 42, 230);
+  animation: rotate1 2s linear infinite;
+}
+
+@keyframes rotate1 {
+  from {
+    transform: rotateX(50deg) rotateZ(110deg);
+  }
+
+  to {
+    transform: rotateX(50deg) rotateZ(470deg);
+  }
+}
+
+#ring:nth-child(2) {
+  border-bottom: 8px solid rgb(240, 19, 67);
+  animation: rotate2 2s linear infinite;
+}
+
+@keyframes rotate2 {
+  from {
+    transform: rotateX(20deg) rotateY(50deg) rotateZ(20deg);
+  }
+
+  to {
+    transform: rotateX(20deg) rotateY(50deg) rotateZ(380deg);
+  }
+}
+
+#ring:nth-child(3) {
+  border-bottom: 8px solid rgb(3, 170, 170);
+  animation: rotate3 2s linear infinite;
+}
+
+@keyframes rotate3 {
+  from {
+    transform: rotateX(40deg) rotateY(130deg) rotateZ(450deg);
+  }
+
+  to {
+    transform: rotateX(40deg) rotateY(130deg) rotateZ(90deg);
+  }
+}
+
+#ring:nth-child(4) {
+  border-bottom: 8px solid rgb(207, 135, 1);
+  animation: rotate4 2s linear infinite;
+}
+
+@keyframes rotate4 {
+  from {
+    transform: rotateX(70deg) rotateZ(270deg);
+  }
+
+  to {
+    transform: rotateX(70deg) rotateZ(630deg);
+  }
+}
+
+/* Improving visualization in light mode */
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+.pagination li {
+  padding: 10px 15px;
+  background-color: rgb(0, 0, 0);
+
+}
+
+.pagination li:first-child {
+  border-radius: 8px 0 0 8px;
+  white-space: nowrap;
+
+}
+
+.pagination li:last-child {
+  border-radius: 0 8px 8px 0;
+  white-space: nowrap;
+
+}
+
+.pagination .active {
+  background: #535bf2;
+}
+
+
+
+#table-plus {
+  padding: 20px;
+
+}
