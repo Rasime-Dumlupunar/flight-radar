@@ -21,6 +21,6 @@ Uçuşların gökyüzündeki dansını izlemek için geliştirilmiş bu React uy
 - Şık ve Kullanıcı Dostu Arayüz: Bootstrap ve modern tasarım ilkeleriyle kullanıcı deneyimini optimize ettik.
 - Bu projede elde ettiğimiz deneyim ve teknik bilgiyle, uçuş verilerini kullanıcı dostu bir şekilde sunmak için harika bir araç geliştirdik. Geri bildirimleriniz ve projeye katkılarınız bizim için çok değerli. Herhangi bir soru veya öneri için bana ulaşmaktan çekinmeyin!
 
-# Demo 
+
 
 ![](https://github.com/Rasime-Dumlupunar/flight-radar/blob/main/flight-radarrgif.gif)
