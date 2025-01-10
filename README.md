@@ -1,7 +1,5 @@
 ## Flight Radar Projesi
 
-# Proje Tanıtımı
-
 Uçuşların gökyüzündeki dansını izlemek için geliştirilmiş bu React uygulaması, Türkiye'yi bir harita üzerinde adeta bir pencereden gözlemlemenizi sağlar. Flight Radar Projesi, RapidAPI API'sinin sunduğu verilerle, Türkiye üzerindeki uçuşları her an ve her yerde takip edebilmenizi mümkün kılar. Gelişmiş teknolojiler ve modern araçlar kullanarak tasarlanmış bu uygulama, uçuş bilgilerini anlık ve ayrıntılı olarak haritada gösterir ve uçakların seyahatlerini rota çizerek gözler önüne serer. 
 
 # Kütüphaneler
